@@ -1,13 +1,13 @@
 const webpack = require('webpack');
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     devtool: 'cheap-module-eval-source-map',
     entry: {
         index: [
             'babel-polyfill',
-            'webpack-hot-middleware/client?reload=true',
             './index.js'
         ]
     },
