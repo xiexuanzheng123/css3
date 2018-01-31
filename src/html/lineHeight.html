@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../src/css/lineHeight.css" type="text/css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+    <!-- CSS中起高度作用的就是line-height和height -->
+    <div class="wrap"> </div>
+    <div class="test1">test1   e   E f</div><br/><br/>
+    <div class="test2">test2</div>
+    <br/><br/>
+    <div>其实line-height产生高度的原因是line box，取最大值</div>
+    <div>行高的垂直居中性</div>
+    <br/><br/>
+    <p class="mulit_line">
+        <span style="font-size:12px;">
+            这里是高度为150像素的标签内的多行文字，文字大小为12像素。
+            <br />这里是第二行，用来测试多行的显示效果。
+        </span>
+        <i>
+            &nbsp;
+        </i>
+    </p>
+    <div class="test">文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</div>
+</body>
+</html>
