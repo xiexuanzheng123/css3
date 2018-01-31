@@ -57,7 +57,7 @@ module.exports = {
             hash: true,
             chunks: ['index'],
             filename: 'index.html',
-            template: './src/html/index.html',
+            template: './src/html/box.html',
             favicon: './src/images/css3.jpg'
         })
     ],

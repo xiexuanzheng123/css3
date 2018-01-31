@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../src/css/box.css" type="text/css" rel="stylesheet"/>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <div>
+        <span class="inline-box">inline标签设置width、height不起作用</span>
+        <span class="inline-box">inline标签设置width、height不起作用</span>
+        <p class="block-box">block标签with和height起作用</p>
+    </div>
+    <div>
+        <ul>
+            <li>第一个列表内容1</li>
+            <li class='new'>第一个列表内容2</li>
+        </ul>
+        <ul>
+            <li>第二个列表内容1</li>
+            <li class="new">第二个列表内容2</li>
+        </ul>
+    </div>
+</body>
+</html>

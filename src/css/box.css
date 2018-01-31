@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: '宋体';
+    font-size: 14px;
+}
+.inline-box {
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-style: solid;
+    border-color: yellow;
+    border-width: medium;
+}
+.block-box {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+ul {
+    background-color: #096;
+    margin: 15px;
+    padding: 5px;
+}
+li {
+    color: black;
+    background-color: #0ff;
+    margin: 20px;
+    padding: 10px;
+    list-style: none;
+}
+li.new {
+    border-style: dashed;
+    border-width: 5px; /*不写的话默认3px；其实是默认medium*/
+    border-color: black;
+    margin-top: 20px;
+}
