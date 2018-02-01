@@ -1,0 +1,33 @@
+body {
+    margin: 10px;
+    font-family: '宋体';
+    font-size: 12px;
+    color: #fff;
+}
+.root {
+    background-color: #a366e8;
+    border: 1px solid #f00;
+    padding: 15px;
+}
+.root div {
+    padding: 10px;
+    margin: 15px;
+    border: 1px dashed #f00;
+}
+.root p {
+    border: 1px solid #f00;
+    background-color: #00f;
+    clear: right;
+}
+.box1 {
+    float: left;
+    background-color: #CCC;
+}
+.box2 {
+    float: left;
+    background-color: pink;
+}
+.box3 {
+    float: right;
+    background-color: green;
+}
