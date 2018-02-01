@@ -4,3 +4,18 @@ span {
     padding: 10px;
     margin: 0px 50px 0px;
 }
+div {
+    border: 2px solid #ff0000;
+    padding: 10px;
+    margin: 50px 50px 100px 50px;
+}
+.test {
+    border: 1px solid #ccc;
+    padding: 50px;
+    margin: 50px;
+}
+.nega {
+    border: 2px solid #096;
+    padding: 50px;
+    margin: -50px 0px 50px;
+}

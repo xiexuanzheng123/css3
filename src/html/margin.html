@@ -8,8 +8,18 @@
     <title>Document</title>
 </head>
 <body>
-    <span>First</span>
-    <span>Second</span>
-    <!-- 左右之间的margin是相加 -->
+    <!-- 行级元素左右之间的margin是相加 -->
+    <span>行级元素左右之间的margin是相加</span>
+    <span>行级元素左右之间的margin是相加</span>
+    <!-- 块级元素上下之间的margin是取大 -->
+    <div>块级元素上下之间的margin是取大</div>
+    <div>块级元素上下之间的margin是取大</div>
+    <!--嵌套的情况margin = 外padding + 内margin-->
+    <div class="test">
+        <div class="test">嵌套的情况margin = 外padding + 内margin</div>
+    </div>
+    <!--margin相加-->
+    <div class="nega">margin为负的情况</div>
+    <div class="nega">margin为负的情况</div>
 </body>
 </html>
