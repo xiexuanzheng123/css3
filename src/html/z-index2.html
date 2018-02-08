@@ -8,41 +8,47 @@
         body {
             background-color: green;
         }
-        .parent {
-            position: relative;
-            right: -5px;
+        .parent1 {
+            position: absolute;
+            left: 50px;
             width: 300px;
             height: 300px;
-            z-index: 1;/*对父元素设置z-index跟不设置的期望不一样*/
             background-color: red;
+        }
+        .parent2 {
+            position: absolute;
+            left: 100px;
+            width: 300px;
+            height: 300px;
+            background-color: pink;
         }
         .son1 {
             position: absolute;
             left: 50px;
+            top: 50px;
             width: 100px;
             height: 100px;
-            top: 50px;
-            z-index: -1;
             background-color: blue;
+            z-index: 10;
         }
         .son2 {
             position: absolute;
-            left: 80px;
-            top: 80px;
+            left: 50px;
+            top: 50px;
             width: 100px;
             height: 100px;
-            z-index: -1;
             background-color: yellow;
+            z-index: 20;
         }
     </style>
     <title>Document</title>
 </head>
 <body>
-    <!-- z-index只能在position属性为relative/absolute/fixed上有效 -->
-    <div class="parent">
+    <div class="parent1">
         <div class="son1"></div>
+    </div>
+    <div class="parent2">
         <div class="son2"></div>
     </div>
-    <!-- 想要父级元素在上面。可以设置子级元素的z-index的值为负，设置正数的父级元素不起作用 -->
 </body>
 </html>
