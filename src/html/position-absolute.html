@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        div {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+        .div0 {
+            background-color: #fff;
+        }
+        .div1 {
+            background-color: #81b6ff;
+            position: absolute;
+        }
+        .div2 {
+            background-color: #b6ff00;
+            position: absolute;
+            top: 0;
+            left: 0; 
+        }
+    </style>
+</head>
+<body style="background-color: yellow">
+    <!-- 
+        position: absolute  1. 使div不再占据一整行
+                            2. 只是设置了absolute，没有设置top left属性的时候，默认设置成auto，该元素的默认位置
+                            3. 会忽略父元素的padding
+    -->     
+    <div class="div0">
+        A
+        <div class="div1">
+            A - 1
+            <div class="div2">
+                A - 2
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div style="z-index: 2; background-color: red;">
+        a
+        <div style="position: relative; z-index: -1; background-color: green;">
+            b
+        </div>
+    </div>
+</body>
+</html>
