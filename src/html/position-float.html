@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        .relative {
+            position: relative;
+            float: right;
+            left: 50px;
+            top: 10px;
+        }
+        .absolute {
+            position: absolute;
+            float: left;
+            right: 10px;
+            top: 10px;
+            border: 1px solid #ccc;
+        }
+        .position {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            border: 1px solid salmon;
+            background-color: blueviolet;
+        }
+        .float {
+            float: left;
+            background-color: red;
+            width: 300px;
+            height: 150px;
+        }
+        .div1 {
+            background-color: #fff;
+            width: 100%;
+            overflow: hidden;
+        }
+        .div2 {
+            float: left;
+            position: absolute;
+        }
+        .div3 {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        同时应用了relative/float/top，元素先浮动到相应的位置，然后根据left等进行距离改变
+     -->
+    <div class="relative">
+        DIV
+    </div>
+    <div class="absolute">
+        应用了absolute，float的DIV，float失效
+    </div>
+
+    <!--
+        两个同级元素，第一个元素应用了position之后会覆盖接下来的float元素
+    -->
+    <div class="position">
+        我是一个应用了absolute的DIV
+    </div>
+    <div class="float">
+        我是float的DIV
+    </div>
+    <!--
+        同时应用position：absolute和float，无法清除浮动
+    -->
+    <div class="div1">
+        <div class="div2">我是DIV</div>
+        <div class="div3">sssss</div>
+    </div>
+</body>
+</html>
