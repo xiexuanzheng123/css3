@@ -57,7 +57,7 @@ module.exports = {
             hash: true,
             chunks: ['index'],
             filename: 'index.html',
-            template: './src/html/position-padding.html',
+            template: './src/selector/supior.html',
             favicon: './src/images/css3.jpg'
         })
     ],
