@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        p {
+            font-size: 18px;
+        } 
+        .p1 {
+            white-space: pre;
+        }
+        .p2 {
+            white-space: nowrap;
+        }
+        .p3 {
+            white-space: pre-wrap;
+        }
+        .p4 {
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+    <p>the latest update of oracle solaris</p>
+    <p>使用white-spacing pre的结果: （空白和Enter都会被保留）</p>
+    <p class="p1">the        latest 
+         update  of oracle solaris</p>
+    <p>使用white-spacing nowrap的结果： （不会换行，空白也会被忽略）</p>
+    <p class="p2">the   latest       update    of 
+        oracle solaris</p>
+    <p>使用white-spacing pre-wrap的结果： （保留空白符和Enter）</p>
+    <p class="p3">the         latest update of 
+        oracle solaris</p>
+    
+    <p>使用white-spacing pre-line的结果： （合并空白符，但是会换行）</p>
+    <p class="p4">the         latest 
+        update of oracle solaris</p>
+</body>
+</html>
