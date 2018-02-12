@@ -57,7 +57,7 @@ module.exports = {
             hash: true,
             chunks: ['index'],
             filename: 'index.html',
-            template: './src/text/white-spacing.html',
+            template: './src/text/line-height.html',
             favicon: './src/images/css3.jpg'
         })
     ],
