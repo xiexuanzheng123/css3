@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        ul {
+            font-family: 宋体;
+            font-size: 14px;
+            list-style-type: none;
+            text-align: center;
+        }
+        li {
+            float: left;
+            width: 80px;
+            margin: 0;
+        }
+        li a, li a:visited {
+            display: block;
+            float: left;
+            width: 80px;
+            position: relative;
+            background-color: #c00;
+            color: #fff;
+            text-decoration: none;
+            padding: 6px;
+            margin: 1px 0 0 1px;
+        }
+        li a:hover {
+            background-color: #f90;
+            color: #333;
+        }
+        li a span {
+            height: 0;
+            width: 0;
+            border-bottom: 1px solid #c00;
+            border-left: solid 6px #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+        }
+        li a:hover span {
+            border-bottom: solid 6px #f90;
+        }
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <li><a href="#"><span></span>首页</a></li>
+        <li><a href="#"><span></span>企业新闻</a></li>
+        <li><a href="#"><span></span>企业简介</a></li>
+        <li><a href="#"><span></span>产品展示</a></li>
+        <li><a href="#"><span></span>联系我们</a></li>
+    </ul>
+</body>
+</html>
